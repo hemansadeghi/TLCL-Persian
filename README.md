@@ -38,7 +38,7 @@
 
 | شماره | فصل (انگلیسی)                          | فصل (فارسی)                     | وضعیت | لینک |
 |-------|-----------------------------------------|----------------------------------|--------|------|
-| 00    | Introduction                           | مقدمه                            | ✅     | [Introduction](Introduction.md) |
+| 00    | Introduction                           | مقدمه                            | ✅     | [Introduction](Book/00/Introduction.md) |
 | 01    | What is the Shell?                     | شل چیست؟                        | ✅     | [Chapter-01](Book/01/Chapter-01.md) |
 | 02    | Navigation                             | مسیریابی                         | 🟡     | [Chapter-02](Book/02/Chapter-02.md) |
 | 03    | Exploring the System                   | کاوش در سیستم                    | ❌     | [Chapter-03](Book/03/Chapter-03.md) |
