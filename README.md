@@ -2,8 +2,8 @@
 
 <p align="center">
   <img src="./assets/image/lcl2_front_new.png" alt="کاور کتاب TLCL" width="400"/>
-
 </p>
+
 
 <p align="center">
   ترجمه فارسی کتاب **The Linux Command Line** نوشته *William Shotts*  
