@@ -1,9 +1,7 @@
 # 📘 ترجمه فارسی کتاب The Linux Command Line (TLCL)
 
 <p align="center">
- <img src="lcl2_front_new.png"
- " alt="کاور کتاب TLCL" width="400"/>
-
+  <img src="lcl2_front_new.png" alt="کاور کتاب TLCL" width="400"/>
 </p>
 
 <p align="center">
