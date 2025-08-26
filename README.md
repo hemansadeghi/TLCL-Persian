@@ -40,7 +40,7 @@
 |-------|-----------------------------------------|----------------------------------|--------|------|
 | 00    | Introduction                           | مقدمه                            | ✅     | [Introduction](Introduction.md) |
 | 01    | What is the Shell?                     | شل چیست؟                        | ✅     | [Chapter-01](Chapter01.md) |
-| 02    | Navigation                             | مسیریابی                         | 🟡     | [Chapter-02](Chapter02.md) |
+| 02    | Navigation                             | مسیریابی                         | ✅     | [Chapter-02](Chapter02.md) |
 | 03    | Exploring the System                   | کاوش در سیستم                    | ❌     | [Chapter-03](Book/03/Chapter-03.md) |
 | 04    | Manipulating Files                     | کار با فایل‌ها                   | ❌     | [Chapter-04](Book/04/Chapter-04.md) |
 | 05    | Working with Commands                  | کار با دستورات                    | ❌     | [Chapter-05](Book/05/Chapter-05.md) |
