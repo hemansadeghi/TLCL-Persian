@@ -32,9 +32,7 @@
 [me@linuxbox ~]$ pwd
 /home/me
 
-yaml
-Copy
-Edit
+
 
 وقتی برای اولین بار وارد سیستم می‌شویم (یا نشست ترمینال را باز می‌کنیم)، پوشه‌ی کاری فعلی روی **home directory** ما تنظیم می‌شود. هر حساب کاربری پوشه‌ی خانگی مخصوص به خود را دارد و تنها جایی است که کاربر عادی اجازه‌ی نوشتن فایل دارد.  
 
@@ -47,9 +45,6 @@ Edit
 [me@linuxbox ~]$ ls
 Desktop Documents Music Pictures Public Templates Videos
 
-yaml
-Copy
-Edit
 
 در واقع، می‌توانیم از دستور `ls` برای نمایش محتویات هر پوشه‌ای استفاده کنیم، نه فقط پوشه‌ی کاری فعلی. امکانات دیگری هم دارد که در فصل بعدی بررسی خواهیم کرد.  
 
@@ -75,9 +70,7 @@ Edit
 [me@linuxbox bin]$ ls
 ... فهرست طولانی از فایل‌ها ...
 
-yaml
-Copy
-Edit
+
 
 حالا می‌بینیم که پوشه‌ی کاری به `/usr/bin` تغییر یافته و پر از فایل است. دقت کنید prompt نیز تغییر کرده و نام پوشه‌ی فعلی را نشان می‌دهد.  
 
@@ -95,9 +88,7 @@ Edit
 [me@linuxbox bin]$ pwd
 /usr/bin
 
-markdown
-Copy
-Edit
+
 
 حالا می‌خواهیم یک پوشه به بالا برویم (به `/usr`). دو راه داریم:  
 
@@ -106,18 +97,12 @@ Edit
 [me@linuxbox usr]$ pwd
 /usr
 
-diff
-Copy
-Edit
+
 
 - یا با مسیر نسبی:  
 [me@linuxbox bin]$ cd ..
 [me@linuxbox usr]$ pwd
 /usr
-
-markdown
-Copy
-Edit
 
 هر دو نتیجه‌ی یکسان دارند. واضح است که روشی که کمتر تایپ بخواهد بهتر است.  
 
@@ -128,26 +113,20 @@ Edit
 [me@linuxbox bin]$ pwd
 /usr/bin
 
-diff
-Copy
-Edit
+
 
 - با مسیر نسبی:  
 [me@linuxbox usr]$ cd ./bin
 [me@linuxbox bin]$ pwd
 /usr/bin
 
-arduino
-Copy
-Edit
+
 
 در بیشتر موارد، نوشتن `"./"` لازم نیست چون به‌طور ضمنی در نظر گرفته می‌شود. تایپ کردن:  
 
 [me@linuxbox usr]$ cd bin
 
-yaml
-Copy
-Edit
+
 
 همان کار را انجام می‌دهد. به‌طور کلی اگر مسیر داده نشود، پوشه‌ی کاری فعلی فرض می‌شود.  
 
