@@ -16,9 +16,7 @@
 
 [me@linuxbox ~]$
 
-markdown
-Copy
-Edit
+
 
 این را **prompt شل** می‌نامند و هر وقت شل آماده‌ی دریافت ورودی باشد ظاهر می‌شود. بسته به توزیع ممکن است ظاهرش کمی متفاوت باشد، اما معمولاً شامل `username@machinename`، سپس مسیر کاری فعلی، و در پایان یک علامت `$` است.  
 
@@ -30,9 +28,7 @@ Edit
 bash: kaekfjaeifj: command not found
 [me@linuxbox ~]$
 
-yaml
-Copy
-Edit
+
 
 از آنجا که این دستور معنایی ندارد، شل پیام خطا می‌دهد و یک prompt تازه ظاهر می‌کند.  
 
@@ -69,18 +65,14 @@ Edit
 [me@linuxbox ~]$ date
 Thu Mar 8 15:09:41 EST 2025
 
-markdown
-Copy
-Edit
+
 
 - دستور `uptime` مدت زمان روشن بودن سیستم و بار پردازشی را نمایش می‌دهد:  
 
 [me@linuxbox ~]$ uptime
 15:12:22 up 3 days, 23:40, 7 users, load average: 0.37, 0.37, 0.64
 
-markdown
-Copy
-Edit
+
 
 - دستور `df` فضای دیسک‌ها را نشان می‌دهد:  
 
@@ -91,9 +83,7 @@ Filesystem 1K-blocks Used Available Use% Mounted on
 /dev/sda1 147764 17370 122765 13% /boot
 tmpfs 256856 0 256856 0% /dev/shm
 
-markdown
-Copy
-Edit
+
 
 - دستور `free` میزان حافظه را نمایش می‌دهد:  
 
@@ -103,9 +93,7 @@ Mem: 513712 503976 9736 0 5312 122916
 -/+ buffers/cache: 375748 137964
 Swap: 1052248 104712 947536
 
-yaml
-Copy
-Edit
+
 
 ---
 
@@ -118,9 +106,7 @@ Edit
 
 [me@linuxbox ~]$ exit
 
-yaml
-Copy
-Edit
+
 
 ---
 
