@@ -44,7 +44,7 @@
 | 03    | Exploring the System                   | کاوش در سیستم                    | ✅     | [Chapter-03](chapter03.md) |
 | 04    | Manipulating Files                     | کار با فایل‌ها                   | ✅     | [Chapter-04](chapter04.md) |
 | 05    | Working with Commands                  | کار با دستورات                   | ✅     | [Chapter-05](chapter05.md) |
-| 06    | Redirection                            | تغییر مسیر ورودی/خروجی           | ❌     | [Chapter-06](chapter06.md) |
+| 06    | Redirection                            | تغییر مسیر ورودی/خروجی           | ✅     | [Chapter-06](chapter06.md) |
 | 07    | Seeing the World as the Shell Sees It  | درک جهان به سبک شل               | ❌     | [Chapter-07](chapter07.md) |
 | 08    | Advanced Keyboard Tricks               | ترفندهای پیشرفته کیبورد          | ❌     | [Chapter-08](chapter08.md) |
 | 09    | Permissions                            | مجوزها                            | ❌     | [Chapter-09](chapter09.md) |
