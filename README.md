@@ -46,9 +46,9 @@
 | 05    | Working with Commands                  | کار با دستورات                   | ✅     | [Chapter-05](chapter05.md) |
 | 06    | Redirection                            | تغییر مسیر ورودی/خروجی           | ✅     | [Chapter-06](chapter06.md) |
 | 07    | Seeing the World as the Shell Sees It  | درک جهان به سبک شل               | ✅     | [Chapter-07](chapter07.md) |
-| 08    | Advanced Keyboard Tricks               | ترفندهای پیشرفته کیبورد          | ❌     | [Chapter-08](chapter08.md) |
-| 09    | Permissions                            | مجوزها                            | ❌     | [Chapter-09](chapter09.md) |
-| 10    | Processes                              | پردازه‌ها                         | ❌     | [Chapter-10](chapter10.md) |
+| 08    | Advanced Keyboard Tricks               | ترفندهای پیشرفته کیبورد          | ✅     | [Chapter-08](chapter08.md) |
+| 09    | Permissions                            | مجوزها                            | ✅     | [Chapter-09](chapter09.md) |
+| 10    | Processes                              | پردازه‌ها                         | ✅     | [Chapter-10](chapter10.md) |
 | 11    | The Environment                        | محیط کاربری (Environment)        | ❌     | [Chapter-11](chapter11.md) |
 | 12    | A Gentle Introduction to vi            | مقدمه‌ای بر vi                   | ❌     | [Chapter-12](chapter12.md) |
 | 13    | Customizing the Prompt                 | شخصی‌سازی Prompt                  | ❌     | [Chapter-13](chapter13.md) |
