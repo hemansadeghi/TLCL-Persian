@@ -17,6 +17,12 @@
   <img src="https://img.shields.io/github/last-commit/hemansadeghi/TLCL-Persian?color=9cf" alt="آخرین کامیت">
 </p>
 
+<h1>
+<p align="center">
+   <a href="https://hheydarian.github.io/Gitab/" target="_blank"><strong>  گیتاب —  نسخه آنلاین کتاب </strong></a>
+</p>
+ </h1>
+
 ---
 
 ## ✨ معرفی پروژه  
