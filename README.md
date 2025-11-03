@@ -1,13 +1,13 @@
-# 📘 ترجمه فارسی کتاب The Linux Command Line (TLCL)
 
 <p align="center">
-  <img src="./assets/image/lcl2_front_new.png" alt="کاور کتاب TLCL" width="400"/>
-</p>
 
+  <img src="./assets/image/Cover.jpg" alt="کاور کتاب TLCL" width="400"/>
 
-<p align="center">
-  ترجمه فارسی کتاب **The Linux Command Line** نوشته *William Shotts*  
+# ترجمه فارسی کتاب The Linux Command Line (TLCL)
+
+  ترجمه فارسی کتاب **The Linux Command Line** نوشته **William Shotts**  
   برای علاقه‌مندان به لینوکس و ابزارهای خط فرمان (CLI)
+
 </p>
 
 <p align="center">
@@ -37,6 +37,7 @@
 - آشنایی مقدماتی با **سیستم‌عامل لینوکس**  
 - دسترسی به یک توزیع لینوکس (Ubuntu, Debian, Fedora, Arch و ...)  
 - علاقه به یادگیری و کار با **ترمینال**  
+- برای تجربه خوانایی بهتر در مرورگر، توصیه می‌کنیم افزونه [فونت ایران](https://chromewebstore.google.com/detail/fontiran/edbchgkbejkdkdkpgenlaciegoidmjoh) رو نصب کنید.
 
 ---
 
@@ -48,16 +49,16 @@
 | 01    | What is the Shell?                     | شل چیست؟                        | ✅     | [Chapter-01](chapter01.md) |
 | 02    | Navigation                             | مسیریابی                         | ✅     | [Chapter-02](chapter02.md) |
 | 03    | Exploring the System                   | کاوش در سیستم                    | ✅     | [Chapter-03](chapter03.md) |
-| 04    | Manipulating Files                     | کار با فایل‌ها                   | ❌     | [Chapter-04](chapter04.md) |
-| 05    | Working with Commands                  | کار با دستورات                   | ❌     | [Chapter-05](chapter05.md) |
-| 06    | Redirection                            | تغییر مسیر ورودی/خروجی           | ❌     | [Chapter-06](chapter06.md) |
-| 07    | Seeing the World as the Shell Sees It  | درک جهان به سبک شل               | ❌     | [Chapter-07](chapter07.md) |
-| 08    | Advanced Keyboard Tricks               | ترفندهای پیشرفته کیبورد          | ❌     | [Chapter-08](chapter08.md) |
-| 09    | Permissions                            | مجوزها                            | ❌     | [Chapter-09](chapter09.md) |
-| 10    | Processes                              | پردازه‌ها                         | ❌     | [Chapter-10](chapter10.md) |
-| 11    | The Environment                        | محیط کاربری (Environment)        | ❌     | [Chapter-11](chapter11.md) |
-| 12    | A Gentle Introduction to vi            | مقدمه‌ای بر vi                   | ❌     | [Chapter-12](chapter12.md) |
-| 13    | Customizing the Prompt                 | شخصی‌سازی Prompt                  | ❌     | [Chapter-13](chapter13.md) |
+| 04    | Manipulating Files                     | کار با فایل‌ها                   | ✅     | [Chapter-04](chapter04.md) |
+| 05    | Working with Commands                  | کار با دستورات                   | ✅     | [Chapter-05](chapter05.md) |
+| 06    | Redirection                            | تغییر مسیر ورودی/خروجی           | ✅     | [Chapter-06](chapter06.md) |
+| 07    | Seeing the World as the Shell Sees It  | درک جهان به سبک شل               | ✅     | [Chapter-07](chapter07.md) |
+| 08    | Advanced Keyboard Tricks               | ترفندهای پیشرفته کیبورد          | ✅     | [Chapter-08](chapter08.md) |
+| 09    | Permissions                            | مجوزها                            | ✅     | [Chapter-09](chapter09.md) |
+| 10    | Processes                              | پردازه‌ها                         | ✅     | [Chapter-10](chapter10.md) |
+| 11    | The Environment                        | محیط کاربری (Environment)        | ✅     | [Chapter-11](chapter11.md) |
+| 12    | A Gentle Introduction to vi            | مقدمه‌ای بر vi                   | ✅     | [Chapter-12](chapter12.md) |
+| 13    | Customizing the Prompt                 | شخصی‌سازی Prompt                  | ✅     | [Chapter-13](chapter13.md) |
 | 14    | Package Management                     | مدیریت بسته‌ها                   | ❌     | [Chapter-14](chapter14.md) |
 | 15    | Storage Media                          | رسانه‌های ذخیره‌سازی             | ❌     | [Chapter-15](chapter15.md) |
 | 16    | Networking                             | شبکه‌سازی                         | ❌     | [Chapter-16](chapter16.md) |
@@ -81,7 +82,6 @@
 | 34    | Strings and Numbers                    | رشته‌ها و اعداد                   | ❌     | [Chapter-34](chapter34.md) |
 | 35    | Arrays                                 | آرایه‌ها                          | ❌     | [Chapter-35](chapter35.md) |
 | 36    | Exotica                                | مباحث متفرقه                      | ❌     | [Chapter-36](chapter36.md) |
-
 
 ---
 
