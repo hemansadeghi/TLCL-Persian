@@ -1,14 +1,14 @@
-# 📘 ترجمه فارسی کتاب The Linux Command Line (TLCL)
 
 <p align="center">
-  <img src="./assets/image/lcl2_front_new.png" alt="کاور کتاب TLCL" width="400"/>
-</p>
 
+  <img src="./assets/image/Cover.jpg" alt="کاور کتاب TLCL" width="400"/>
+  </p>
 
-<p align="center">
-  ترجمه فارسی کتاب **The Linux Command Line** نوشته *William Shotts*  
+  <p align="center">
+    
+# ترجمه فارسی کتاب The Linux Command Line (TLCL)
   برای علاقه‌مندان به لینوکس و ابزارهای خط فرمان (CLI)
-</p>
+  </p>
 
 <p align="center">
   <img src="https://img.shields.io/github/stars/hemansadeghi/TLCL-Persian?style=social" alt="ستاره‌ها">
@@ -27,7 +27,7 @@
 
 ## ✨ معرفی پروژه  
 
-کتاب **The Linux Command Line** یکی از بهترین منابع برای یادگیری دستورات لینوکس و کار حرفه‌ای با خط فرمان است.  
+کتاب **The Linux Command Line** نوشته **William Shotts**  یکی از بهترین منابع برای یادگیری دستورات لینوکس و کار حرفه‌ای با خط فرمان است.  
 این پروژه با هدف ارائه ترجمه‌ای فارسی، روان و دقیق برای جامعه لینوکسی و برنامه‌نویسان فارسی‌زبان ایجاد شده است.  
 
 ---
@@ -37,9 +37,12 @@
 - آشنایی مقدماتی با **سیستم‌عامل لینوکس**  
 - دسترسی به یک توزیع لینوکس (Ubuntu, Debian, Fedora, Arch و ...)  
 - علاقه به یادگیری و کار با **ترمینال**  
+- برای تجربه خوانایی بهتر در مرورگر، توصیه می‌کنیم افزونه [فونت ایران](https://chromewebstore.google.com/detail/fontiran/edbchgkbejkdkdkpgenlaciegoidmjoh) رو نصب کنید.
 
 ---
 
+<p align="center">
+  
 ## 📚 وضعیت ترجمه  
 
 | شماره | فصل (انگلیسی)                          | فصل (فارسی)                     | وضعیت | لینک |
@@ -55,11 +58,11 @@
 | 08    | Advanced Keyboard Tricks               | ترفندهای پیشرفته کیبورد          | ✅     | [Chapter-08](chapter08.md) |
 | 09    | Permissions                            | مجوزها                            | ✅     | [Chapter-09](chapter09.md) |
 | 10    | Processes                              | پردازه‌ها                         | ✅     | [Chapter-10](chapter10.md) |
-| 11    | The Environment                        | محیط کاربری (Environment)        | ❌     | [Chapter-11](chapter11.md) |
-| 12    | A Gentle Introduction to vi            | مقدمه‌ای بر vi                   | ❌     | [Chapter-12](chapter12.md) |
-| 13    | Customizing the Prompt                 | شخصی‌سازی Prompt                  | ❌     | [Chapter-13](chapter13.md) |
-| 14    | Package Management                     | مدیریت بسته‌ها                   | ❌     | [Chapter-14](chapter14.md) |
-| 15    | Storage Media                          | رسانه‌های ذخیره‌سازی             | ❌     | [Chapter-15](chapter15.md) |
+| 11    | The Environment                        | محیط کاربری (Environment)        | ✅     | [Chapter-11](chapter11.md) |
+| 12    | A Gentle Introduction to vi            | مقدمه‌ای بر vi                   | ✅     | [Chapter-12](chapter12.md) |
+| 13    | Customizing the Prompt                 | شخصی‌سازی Prompt                  | ✅     | [Chapter-13](chapter13.md) |
+| 14    | Package Management                     | مدیریت بسته‌ها                   | ✅     | [Chapter-14](chapter14.md) |
+| 15    | Storage Media                          | رسانه‌های ذخیره‌سازی             | ✅     | [Chapter-15](chapter15.md) |
 | 16    | Networking                             | شبکه‌سازی                         | ❌     | [Chapter-16](chapter16.md) |
 | 17    | Searching for Files                    | جستجوی فایل‌ها                   | ❌     | [Chapter-17](chapter17.md) |
 | 18    | Archiving and Backup                   | بایگانی و پشتیبان‌گیری            | ❌     | [Chapter-18](chapter18.md) |
@@ -82,6 +85,7 @@
 | 35    | Arrays                                 | آرایه‌ها                          | ❌     | [Chapter-35](chapter35.md) |
 | 36    | Exotica                                | مباحث متفرقه                      | ❌     | [Chapter-36](chapter36.md) |
 
+</p>
 
 ---
 
