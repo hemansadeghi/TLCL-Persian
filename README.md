@@ -63,9 +63,9 @@
 | 13    | Customizing the Prompt                 | شخصی‌سازی Prompt                  | ✅     | [Chapter-13](chapter13.md) |
 | 14    | Package Management                     | مدیریت بسته‌ها                   | ✅     | [Chapter-14](chapter14.md) |
 | 15    | Storage Media                          | رسانه‌های ذخیره‌سازی             | ✅     | [Chapter-15](chapter15.md) |
-| 16    | Networking                             | شبکه‌سازی                         | ❌     | [Chapter-16](chapter16.md) |
-| 17    | Searching for Files                    | جستجوی فایل‌ها                   | ❌     | [Chapter-17](chapter17.md) |
-| 18    | Archiving and Backup                   | بایگانی و پشتیبان‌گیری            | ❌     | [Chapter-18](chapter18.md) |
+| 16    | Networking                             | شبکه‌سازی                         | ✅     | [Chapter-16](chapter16.md) |
+| 17    | Searching for Files                    | جستجوی فایل‌ها                    |✅     | [Chapter-17](chapter17.md) |
+| 18    | Archiving and Backup                   | بایگانی و پشتیبان‌گیری            | ✅     | [Chapter-18](chapter18.md) |
 | 19    | Regular Expressions                    | عبارات منظم (Regex)              | ❌     | [Chapter-19](chapter19.md) |
 | 20    | Text Processing                        | پردازش متن                        | ❌     | [Chapter-20](chapter20.md) |
 | 21    | Formatting Output                      | قالب‌بندی خروجی                   | ❌     | [Chapter-21](chapter21.md) |
