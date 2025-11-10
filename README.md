@@ -68,7 +68,7 @@
 | 17    | Searching for Files                    | جستجوی فایل‌ها                   | ✅     | [Chapter-17](Book/17/chapter17.md) |
 | 18    | Archiving and Backup                   | بایگانی و پشتیبان‌گیری            | ✅     | [Chapter-18](Book/18/chapter18.md) |
 | 19    | Regular Expressions                    | عبارات منظم (Regex)              | ✅     | [Chapter-19](Book/19/chapter19.md) |
-| 20    | Text Processing                        | پردازش متن                        | ❌     | [Chapter-20](Book/20/chapter20.md) |
+| 20    | Text Processing                        | پردازش متن                        | ✅     | [Chapter-20](Book/20/chapter20.md) |
 | 21    | Formatting Output                      | قالب‌بندی خروجی                   | ❌     | [Chapter-21](Book/21/chapter21.md) |
 | 22    | Printing                               | چاپ                               | ❌     | [Chapter-22](Book/22/chapter22.md) |
 | 23    | Compiling Programs                     | کامپایل برنامه‌ها                 | ❌     | [Chapter-23](Book/23/chapter23.md) |
