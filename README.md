@@ -63,6 +63,7 @@
 | 13    | Customizing the Prompt                 | شخصی‌سازی Prompt                  | ✅     | [Chapter-13](chapter13.md) |
 | 14    | Package Management                     | مدیریت بسته‌ها                   | ✅     | [Chapter-14](chapter14.md) |
 | 15    | Storage Media                          | رسانه‌های ذخیره‌سازی             | ✅     | [Chapter-15](chapter15.md) |
+| 16    | Networking                             | شبکه‌سازی                         | ❌     | [Chapter-16](chapter16.md) |
 | 16    | Networking                             | شبکه‌سازی                         | ✅     | [Chapter-16](chapter16.md) |
 | 17    | Searching for Files                    | جستجوی فایل‌ها                   | ✅     | [Chapter-17](chapter17.md) |
 | 18    | Archiving and Backup                   | بایگانی و پشتیبان‌گیری            | ✅     | [Chapter-18](chapter18.md) |
@@ -74,6 +75,8 @@
 | 24    | Writing Shell Scripts                  | نوشتن شل اسکریپت                  | ✅     | [Chapter-24](chapter24.md) |
 | 25    | Starting a Project                     | شروع یک پروژه                     | ✅     | [Chapter-25](chapter25.md) |
 | 26    | Top-Down Design                        | طراحی بالا به پایین               | ✅     | [Chapter-26](chapter26.md) |
+| 27    | Flow Control: Branching with if        | کنترل جریان: شرط if               | ✅     | [Chapter-27](chapter27.md) |
+| 28    | Reading Keyboard Input                 | خواندن ورودی کیبورد               | ✅     | [Chapter-28](chapter28.md) |
 | 27    | Flow Control: Branching with if        | کنترل جریان: شرط if               | ❌     | [Chapter-27](chapter27.md) |
 | 28    | Reading Keyboard Input                 | خواندن ورودی کیبورد               | ❌     | [Chapter-28](chapter28.md) |
 | 29    | Flow Control: Looping with while/until | حلقه‌ها با while/until            | ❌     | [Chapter-29](chapter29.md) |
