@@ -64,6 +64,7 @@
 | 14    | Package Management                     | مدیریت بسته‌ها                   | ✅     | [Chapter-14](chapter14.md) |
 | 15    | Storage Media                          | رسانه‌های ذخیره‌سازی             | ✅     | [Chapter-15](chapter15.md) |
 | 16    | Networking                             | شبکه‌سازی                         | ❌     | [Chapter-16](chapter16.md) |
+| 16    | Networking                             | شبکه‌سازی                         | ✅     | [Chapter-16](chapter16.md) |
 | 17    | Searching for Files                    | جستجوی فایل‌ها                   | ✅     | [Chapter-17](chapter17.md) |
 | 18    | Archiving and Backup                   | بایگانی و پشتیبان‌گیری            | ✅     | [Chapter-18](chapter18.md) |
 | 19    | Regular Expressions                    | عبارات منظم (Regex)              | ✅     | [Chapter-19](chapter19.md) |
@@ -76,6 +77,8 @@
 | 26    | Top-Down Design                        | طراحی بالا به پایین               | ✅     | [Chapter-26](chapter26.md) |
 | 27    | Flow Control: Branching with if        | کنترل جریان: شرط if               | ✅     | [Chapter-27](chapter27.md) |
 | 28    | Reading Keyboard Input                 | خواندن ورودی کیبورد               | ✅     | [Chapter-28](chapter28.md) |
+| 27    | Flow Control: Branching with if        | کنترل جریان: شرط if               | ❌     | [Chapter-27](chapter27.md) |
+| 28    | Reading Keyboard Input                 | خواندن ورودی کیبورد               | ❌     | [Chapter-28](chapter28.md) |
 | 29    | Flow Control: Looping with while/until | حلقه‌ها با while/until            | ❌     | [Chapter-29](chapter29.md) |
 | 30    | Troubleshooting                        | اشکال‌زدایی                       | ❌     | [Chapter-30](chapter30.md) |
 | 31    | Flow Control: Branching with case      | کنترل جریان: شرط case             | ❌     | [Chapter-31](chapter31.md) |
