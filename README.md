@@ -1,20 +1,22 @@
+<p align="center">
+  <img src="./assets/image/Cover.jpg" alt="کاور کتاب TLCL" width="400"/>
+</p>
+
+<h1 align="center">
+  ترجمه فارسی کتاب The Linux Command Line (TLCL)
+</h1>
 
 <p align="center">
-
-  <img src="./assets/image/Cover.jpg" alt="کاور کتاب TLCL" width="400"/>
-  </p>
-
-  <p align="center">
-    
-# ترجمه فارسی کتاب The Linux Command Line (TLCL)
   برای علاقه‌مندان به لینوکس و ابزارهای خط فرمان (CLI)
-  </p>
+</p>
+
 
 <p align="center">
   <img src="https://img.shields.io/github/stars/hemansadeghi/TLCL-Persian?style=social" alt="ستاره‌ها">
   <img src="https://img.shields.io/github/forks/hemansadeghi/TLCL-Persian?color=blueviolet" alt="فورک‌ها">
-  <img src="https://img.shields.io/github/issues/hemansadeghi/TLCL-Persian?color=ff69b4" alt="Issues">
-  <img src="https://img.shields.io/github/last-commit/hemansadeghi/TLCL-Persian?color=9cf" alt="آخرین کامیت">
+  <img src="https://img.shields.io/github/last-commit/hemansadeghi/TLCL-Persian?color=9cf" alt="Last Commit">
+  <img src="https://img.shields.io/badge/Translation-100%25-success" alt="Translation Status">
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=hemansadeghi.TLCL-Persian" alt="Visitors">
 </p>
 
 <h1>
@@ -76,14 +78,14 @@
 | 26    | Top-Down Design                        | طراحی بالا به پایین               | ✅     | [Chapter-26](chapter26.md) |
 | 27    | Flow Control: Branching with if        | کنترل جریان: شرط if               | ✅     | [Chapter-27](chapter27.md) |
 | 28    | Reading Keyboard Input                 | خواندن ورودی کیبورد               | ✅     | [Chapter-28](chapter28.md) |
-| 29    | Flow Control: Looping with while/until | حلقه‌ها با while/until            | ❌     | [Chapter-29](chapter29.md) |
-| 30    | Troubleshooting                        | اشکال‌زدایی                       | ❌     | [Chapter-30](chapter30.md) |
-| 31    | Flow Control: Branching with case      | کنترل جریان: شرط case             | ❌     | [Chapter-31](chapter31.md) |
-| 32    | Positional Parameters                  | پارامترهای موقعیتی                | ❌     | [Chapter-32](chapter32.md) |
-| 33    | Flow Control: Looping with for         | حلقه for                          | ❌     | [Chapter-33](chapter33.md) |
-| 34    | Strings and Numbers                    | رشته‌ها و اعداد                   | ❌     | [Chapter-34](chapter34.md) |
-| 35    | Arrays                                 | آرایه‌ها                          | ❌     | [Chapter-35](chapter35.md) |
-| 36    | Exotica                                | مباحث متفرقه                      | ❌     | [Chapter-36](chapter36.md) |
+| 29    | Flow Control: Looping with while/until | حلقه‌ها با while/until            | ✅     | [Chapter-29](chapter29.md) |
+| 30    | Troubleshooting                        | اشکال‌زدایی                       | ✅     | [Chapter-30](chapter30.md) |
+| 31    | Flow Control: Branching with case      | کنترل جریان: شرط case             | ✅     | [Chapter-31](chapter31.md) |
+| 32    | Positional Parameters                  | پارامترهای موقعیتی                | ✅     | [Chapter-32](chapter32.md) |
+| 33    | Flow Control: Looping with for         | حلقه for                          | ✅     | [Chapter-33](chapter33.md) |
+| 34    | Strings and Numbers                    | رشته‌ها و اعداد                   | ✅     | [Chapter-34](chapter34.md) |
+| 35    | Arrays                                 | آرایه‌ها                          | ✅     | [Chapter-35](chapter35.md) |
+| 36    | Exotica                                | مباحث متفرقه                      | ✅     | [Chapter-36](chapter36.md) |
 
 </p>
 
@@ -91,7 +93,6 @@
 
 ## 🙌 مشارکت در پروژه  
 
-- ✍️ ترجمه فصل‌های جدید  
 - 🔍 بازبینی و اصلاح ترجمه‌های موجود  
 - 🎨 بهبود فرمت و قالب‌بندی متن‌ها  
 - 💡 ارائه پیشنهادهای فنی یا ادبی  
