@@ -16,13 +16,15 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install Pandoc and TeX Live
+        timeout-minutes: 15
         run: |
-          echo "http://archive.ubuntu.com/ubuntu" | sudo tee /etc/apt/apt-mirrors.txt
+          echo "https://mirrors.edge.kernel.org/ubuntu" | sudo tee /etc/apt/apt-mirrors.txt
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends \
             -o Acquire::Retries=3 -o Acquire::http::Timeout=30 \
             pandoc texlive-xetex texlive-latex-extra texlive-lang-arabic \
             fonts-dejavu-core fontconfig zip
+
 
       - name: Install fonts
         run: |
