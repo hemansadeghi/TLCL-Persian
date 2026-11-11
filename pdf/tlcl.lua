@@ -159,3 +159,52 @@ function BlockQuote(el)
   return blocks
 end
 
+-- Give every table column an explicit width so long cells wrap instead of
+-- running off the page. Widths follow the longest text in each column.
+local function cell_text(cell)
+  local contents = cell.contents:walk {
+    RawInline = function(r)
+      local plain = r.text:match("\\texorpdfstring{.*}{(.*)}$")
+                    or r.text:gsub("\\%a+", ""):gsub("[{}]", "")
+      return pandoc.Str(plain)
+    end
+  }
+  local s = pandoc.utils.stringify(contents)
+  return utf8.len(s) or #s
+end
+
+function Table(tbl)
+  local n = #tbl.colspecs
+  local longest = {}
+  for i = 1, n do longest[i] = 1 end
+
+  local function scan(rows)
+    for _, row in ipairs(rows) do
+      local col = 1
+      for _, cell in ipairs(row.cells) do
+        local span = cell.col_span or 1
+        if span == 1 and col <= n then
+          longest[col] = math.max(longest[col], cell_text(cell))
+        end
+        col = col + span
+      end
+    end
+  end
+
+  scan(tbl.head.rows)
+  for _, body in ipairs(tbl.bodies) do
+    scan(body.head)
+    scan(body.body)
+  end
+
+  -- Square root keeps short columns (commands) from being squeezed too thin
+  local weights, total = {}, 0
+  for i = 1, n do
+    weights[i] = math.sqrt(longest[i])
+    total = total + weights[i]
+  end
+  for i = 1, n do
+    tbl.colspecs[i] = { tbl.colspecs[i][1], weights[i] / total }
+  end
+  return tbl
+end
