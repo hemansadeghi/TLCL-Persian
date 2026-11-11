@@ -253,10 +253,49 @@ local function split_prompt_lines(el)
   return out
 end
 
+-- Pandoc gives non-wrapping columns to tables whose source lines are short,
+-- but Persian text is wider on the page, so set widths from cell lengths
+local function widen_table(tbl)
+  local n = #tbl.colspecs
+  for _, cs in ipairs(tbl.colspecs) do
+    if cs[2] and cs[2] > 0 then return nil end
+  end
+
+  local lens = {}
+  for i = 1, n do lens[i] = 3 end
+  local function measure(rows)
+    for _, row in ipairs(rows) do
+      for i, cell in ipairs(row.cells) do
+        if i <= n then
+          local s = pandoc.utils.stringify(cell.contents)
+          local l = utf8.len(s) or #s
+          if l > lens[i] then lens[i] = l end
+        end
+      end
+    end
+  end
+  measure(tbl.head.rows)
+  for _, body in ipairs(tbl.bodies) do measure(body.body) end
+
+  local total = 0
+  for i = 1, n do total = total + lens[i] end
+  if total < 70 then return nil end
+
+  local widths, sum = {}, 0
+  for i = 1, n do
+    widths[i] = math.max(lens[i] / total, 0.15)
+    sum = sum + widths[i]
+  end
+  for i = 1, n do
+    tbl.colspecs[i] = { tbl.colspecs[i][1], widths[i] / sum }
+  end
+  return tbl
+end
+
 -- Prompts must be found before English words are wrapped in \lr{},
 -- so this runs as a separate first pass
 return {
-  { Para = split_prompt_lines, Plain = split_prompt_lines },
+  { Para = split_prompt_lines, Plain = split_prompt_lines, Table = widen_table },
   {
     Code = Code, Link = Link, Image = Image, Inlines = Inlines,
     Header = Header, HorizontalRule = HorizontalRule,
