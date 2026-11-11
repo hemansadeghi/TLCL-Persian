@@ -17,8 +17,10 @@ jobs:
 
       - name: Install Pandoc and TeX Live
         run: |
+          echo "http://archive.ubuntu.com/ubuntu" | sudo tee /etc/apt/apt-mirrors.txt
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends \
+            -o Acquire::Retries=3 -o Acquire::http::Timeout=30 \
             pandoc texlive-xetex texlive-latex-extra texlive-lang-arabic \
             fonts-dejavu-core fontconfig zip
 
