@@ -23,6 +23,7 @@ jobs:
           sudo apt-get install -y --no-install-recommends \
             -o Acquire::Retries=3 -o Acquire::http::Timeout=30 \
             pandoc texlive-xetex texlive-latex-extra texlive-lang-arabic \
+            texlive-fonts-recommended \
             fonts-dejavu-core fontconfig zip
 
 
