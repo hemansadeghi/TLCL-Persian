@@ -208,3 +208,58 @@ function Table(tbl)
   end
   return tbl
 end
+
+-- Commands written after a shell prompt without a code fence,
+-- e.g. "[me@linuxbox ~]$ pwd", become code blocks
+local function is_prompt(line)
+  return line:find("^%[[^%]]+%][%$#]") ~= nil
+end
+
+local function split_prompt_lines(el)
+  local lines, cur = {}, pandoc.Inlines{}
+  for _, x in ipairs(el.content) do
+    if x.t == "SoftBreak" or x.t == "LineBreak" then
+      table.insert(lines, cur)
+      cur = pandoc.Inlines{}
+    else
+      cur:insert(x)
+    end
+  end
+  table.insert(lines, cur)
+
+  local first
+  for i, line in ipairs(lines) do
+    if is_prompt(pandoc.utils.stringify(line)) then
+      first = i
+      break
+    end
+  end
+  if not first then return nil end
+
+  local out = pandoc.Blocks{}
+  if first > 1 then
+    local prose = pandoc.Inlines{}
+    for i = 1, first - 1 do
+      if i > 1 then prose:insert(pandoc.LineBreak()) end
+      prose:extend(lines[i])
+    end
+    out:insert(el.t == "Para" and pandoc.Para(prose) or pandoc.Plain(prose))
+  end
+  local code = {}
+  for i = first, #lines do
+    table.insert(code, pandoc.utils.stringify(lines[i]))
+  end
+  out:insert(pandoc.CodeBlock(table.concat(code, "\n")))
+  return out
+end
+
+-- Prompts must be found before English words are wrapped in \lr{},
+-- so this runs as a separate first pass
+return {
+  { Para = split_prompt_lines, Plain = split_prompt_lines },
+  {
+    Code = Code, Link = Link, Image = Image, Inlines = Inlines,
+    Header = Header, HorizontalRule = HorizontalRule,
+    CodeBlock = CodeBlock, BlockQuote = BlockQuote,
+  },
+}
