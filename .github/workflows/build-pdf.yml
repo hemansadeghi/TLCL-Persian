@@ -1,0 +1,58 @@
+name: Build PDF
+
+on:
+  push:
+    branches: [main]
+    paths: ['Book/**', 'pdf/**', '.github/workflows/build-pdf.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Pandoc and TeX Live
+        timeout-minutes: 15
+        run: |
+          echo "https://mirrors.edge.kernel.org/ubuntu" | sudo tee /etc/apt/apt-mirrors.txt
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            -o Acquire::Retries=3 -o Acquire::http::Timeout=30 \
+            pandoc texlive-xetex texlive-latex-extra texlive-lang-arabic \
+            texlive-fonts-recommended \
+            fonts-dejavu-core fontconfig zip
+
+
+      - name: Install fonts
+        run: |
+          mkdir -p ~/.local/share/fonts
+          cp pdf/fonts/*.ttf ~/.local/share/fonts/
+          fc-cache -f
+
+      - name: Build
+        run: bash pdf/build.sh
+
+      - name: Package LaTeX sources
+        run: cd pdf && zip -r ../TLCL-Persian-latex.zip main.tex tlcl.lua build
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: TLCL-Persian
+          path: |
+            pdf/TLCL-Persian.pdf
+            TLCL-Persian-latex.zip
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete latest --yes --cleanup-tag || true
+          gh release create latest pdf/TLCL-Persian.pdf TLCL-Persian-latex.zip \
+            --target "$GITHUB_SHA" \
+            --title "TLCL-Persian (latest build)" \
+            --notes "Built automatically from commit $GITHUB_SHA"
+
