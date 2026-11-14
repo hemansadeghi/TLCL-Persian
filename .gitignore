@@ -1,3 +1,10 @@
 .DS_Store
 Thumbs.db
 *~
+.DS_Store
+pdf/build/
+pdf/*.aux
+pdf/*.log
+pdf/*.toc
+pdf/*.out
+pdf/TLCL-Persian.pdf

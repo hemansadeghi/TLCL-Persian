@@ -1,0 +1,145 @@
+% !TEX program = xelatex
+\documentclass[11pt,a4paper,twoside,openright]{book}
+
+\usepackage[a4paper,top=2.8cm,bottom=2.8cm,inner=2.8cm,outer=2.5cm,headsep=0.8cm]{geometry}
+
+% ---------- Packages ----------
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{calc}
+\newcounter{none}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{enumitem}
+\usepackage{fvextra}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{emptypage}
+\usepackage{hyperref}
+\usepackage{xepersian}
+
+% ---------- fonts ----------
+\settextfont{Estedad}
+\setlatintextfont{Estedad}
+\setdigitfont{Estedad}
+\setlatinmonofont[Scale=0.88]{DejaVu Sans Mono}
+
+% ---------- colors ----------
+\definecolor{accent}{HTML}{1F3A5F}
+\definecolor{muted}{HTML}{57606A}
+\definecolor{codebg}{HTML}{F6F8FA}
+\definecolor{codeframe}{HTML}{D0D7DE}
+\definecolor{warn}{HTML}{9A6700}
+
+\hypersetup{
+  colorlinks=true, linkcolor=accent, urlcolor=accent, citecolor=accent,
+  pdftitle={خط فرمان لینوکس}, pdfauthor={William Shotts}
+}
+
+% ---------- text ----------
+\linespread{1.3}
+\setlength{\parindent}{1.2em}
+\setlength{\parskip}{0.3em}
+\setlist{itemsep=2pt,topsep=4pt}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\AddToHook{env/longtable/begin}{\let\raggedright\relax}
+% ---------- titles ----------
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\color{accent}}
+  {\large\chaptertitlename\ \thechapter}
+  {8pt}
+  {\Huge}
+  [\vspace{6pt}{\color{accent}\titlerule[1.2pt]}]
+\titlespacing*{\chapter}{0pt}{40pt}{36pt}
+
+\titleformat{\section}{\normalfont\Large\bfseries\color{accent}}{\thesection}{0.8em}{}
+\titlespacing*{\section}{0pt}{18pt}{8pt}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{0.8em}{}
+\titlespacing*{\subsection}{0pt}{14pt}{6pt}
+
+% ---------- head,tail page ----------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[CE]{\small\color{muted}\leftmark}
+\fancyhead[CO]{\small\color{muted}\rightmark}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\chaptermark}[1]{\markboth{\chaptertitlename\ \thechapter\ — #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\quad #1}}
+\fancypagestyle{plain}{%
+  \fancyhf{}\fancyfoot[C]{\small\thepage}\renewcommand{\headrulewidth}{0pt}}
+
+% ---------- Code ----------
+\newtcolorbox{codebox}{
+  enhanced, breakable, arc=2pt, boxrule=0.5pt,
+  colback=codebg, colframe=codeframe,
+  left=6pt, right=6pt, top=4pt, bottom=4pt,
+  before skip=10pt, after skip=10pt
+}
+\DefineVerbatimEnvironment{CodeVerbatim}{Verbatim}
+  {fontsize=\small, breaklines=true, commandchars=\\\{\}}
+% توضیح فارسی داخل بلوک کد
+\newcommand{\codefa}[1]{\rl{\rmfamily #1}}
+
+% ---------- format ----------
+\newtcolorbox{notebox}[1][نکته]{
+  enhanced, breakable, arc=2pt, boxrule=0.6pt,
+  colback=accent!4, colframe=accent!70,
+  colbacktitle=accent!70, coltitle=white, fonttitle=\bfseries\small,
+  left=8pt, right=8pt, top=6pt, bottom=6pt, title={#1}
+}
+\newtcolorbox{warnbox}[1][هشدار]{
+  enhanced, breakable, arc=2pt, boxrule=0.6pt,
+  colback=warn!5, colframe=warn!80,
+  colbacktitle=warn!80, coltitle=white, fonttitle=\bfseries\small,
+  left=8pt, right=8pt, top=6pt, bottom=6pt, title={#1}
+}
+
+\begin{document}
+
+% ================= main page =================
+\frontmatter
+\begin{titlepage}
+  \centering
+  \vspace*{2cm}
+  {\large\color{muted} ترجمه فارسی\par}
+  \vspace{1.2cm}
+  {\fontsize{34}{44}\selectfont\bfseries\color{accent} خط فرمان لینوکس\par}
+  \vspace{0.6cm}
+  {\Large\lr{The Linux Command Line}\par}
+  \vspace{0.8cm}
+  {\color{accent}\rule{0.35\textwidth}{1.2pt}\par}
+  \vspace{0.8cm}
+  {\large نوشته ویلیام شاتس\par}
+  \vfill
+  {\normalsize پروژه ترجمه \lr{TLCL-Persian}\par}
+  \vspace{2pt}
+  {\small\lr{\url{https://github.com/hemansadeghi/TLCL-Persian}}\par}
+\end{titlepage}
+
+% ================= license page =================
+\thispagestyle{empty}
+\vspace*{\fill}
+{\small
+\noindent\textbf{عنوان اصلی:} \lr{The Linux Command Line}\\
+\textbf{نویسنده:} ویلیام شاتس (\lr{William Shotts})\\
+\textbf{ترجمه:} مشارکت‌کنندگان پروژه \lr{TLCL-Persian}\\[1em]
+حقوق کتاب اصلی متعلق به نویسنده است. ترجمه فارسی تحت مجوز
+\lr{CC BY-NC-SA 4.0} و نمونه‌کدها تحت مجوز \lr{MIT} منتشر شده‌اند.\\[1em]
+این فایل به‌صورت خودکار از متن مخزن پروژه ساخته شده است:\\
+\lr{\url{https://github.com/hemansadeghi/TLCL-Persian}}
+\par}
+
+\cleardoublepage
+\tableofcontents
+
+% ================= main text =================
+\mainmatter
+\input{build/chapters}
+
+\end{document}
+
